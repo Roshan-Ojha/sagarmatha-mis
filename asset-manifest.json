@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sagarmatha-mis/static/css/main.c7e49826.css",
+    "main.js": "/sagarmatha-mis/static/js/main.3efc149c.js",
+    "static/js/787.a6a5b866.chunk.js": "/sagarmatha-mis/static/js/787.a6a5b866.chunk.js",
+    "static/media/logo.svg": "/sagarmatha-mis/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sagarmatha-mis/index.html",
+    "main.c7e49826.css.map": "/sagarmatha-mis/static/css/main.c7e49826.css.map",
+    "main.3efc149c.js.map": "/sagarmatha-mis/static/js/main.3efc149c.js.map",
+    "787.a6a5b866.chunk.js.map": "/sagarmatha-mis/static/js/787.a6a5b866.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7e49826.css",
+    "static/js/main.3efc149c.js"
+  ]
+}
