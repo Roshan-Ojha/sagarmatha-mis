@@ -1,0 +1,113 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 475px;
+    border: 1px solid #066283;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Sagarmatha{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: #066283;
+    height: 50px;
+
+}
+
+.Sagarmatha img{
+    display: flex;
+    width: 50px;
+    height:50px;
+}
+
+.Sagarmatha span{
+    padding-top: 12px;
+}
+
+.firsthr{
+    width: 120px;
+    border: 1px solid #066283;
+    background-color: #066283;
+    box-shadow: 0 20px 20px -20px #066283;
+}
+
+.welcome{
+    margin-top:10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+}
+.welcome span{
+    color: #066283;
+}
+
+.Email{
+    margin-bottom: 15px;
+}
+
+.Email, .Password{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Email input, .Password input{
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 25px;
+    background-color: #f5ffff;
+}
+
+.forgot{
+    margin-top: 5px;
+    width: 91%;
+    display: flex;
+    justify-content: right;
+    color: #066283;
+    margin-bottom: 5px;
+    font-size: 10px;
+
+}
+
+.check{
+    display: flex;
+    margin-left: 27px;
+    margin-bottom: 40px;
+    
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.submit input{
+    width: 60%;
+    height: 30px;
+    border: 2px solid #066283;
+    color: #066283;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.secondhr{
+    width: 240px;
+    border: 0.2px solid black;
+    margin-bottom: 15px
+    ;  
+}
+
+.support{
+    display: flex;
+    justify-content: center;
+}
+.support span{
+    color: #066283;
+}
+
+
