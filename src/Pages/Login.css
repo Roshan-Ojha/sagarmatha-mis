@@ -5,6 +5,11 @@
     height: 475px;
     border: 1px solid #066283;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px #066283;
+    justify-content: center;
+    
 }
 
 .Sagarmatha{
@@ -93,7 +98,19 @@
     color: #066283;
     margin-bottom: 35px;
     cursor: pointer;
+    background-color: white;
 }
+
+.submit input:hover{    
+    width: 60%;
+    height: 30px;
+    border: 2px solid #066283;
+    color: white;
+    margin-bottom: 35px;
+    cursor: pointer;
+    background-color: #066283;
+}
+
 
 .secondhr{
     width: 240px;
@@ -105,6 +122,7 @@
 .support{
     display: flex;
     justify-content: center;
+    font-size: 13px;
 }
 .support span{
     color: #066283;

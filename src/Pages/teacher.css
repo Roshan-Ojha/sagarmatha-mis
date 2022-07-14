@@ -1,0 +1,131 @@
+.mainteacher{
+    display: flex;
+    /* justify-content: left; */
+    flex-direction: column;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sagarmatha{
+    display:flex;
+    justify-content: left;
+    font-size: 25px;
+    color: #066283;
+    height: 50px;
+}
+
+.sagarmatha button{
+    margin-left: 1000px;
+    width:100px;
+    background-color: white;
+}
+
+.welcomeTeacher{
+    margin-top: 30px;
+    margin-left: 65px
+}
+
+.welcomeTeacher span{
+    color: #066283;
+}
+
+.selectBatch{
+    display:flex;
+    flex-direction: row;
+    margin-left: 65px;
+    gap: 10px;
+}
+
+select{
+    width:80px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: white;
+}
+
+.faculty select{
+    width:125px;
+}
+
+.selectBatch button{
+    height:20px;
+    background-color: #9be9fa;
+    border-radius: 5px;
+}
+
+.subject{
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+.subject span{
+    color: #066283;
+}
+
+.Entry{
+    height: 49px;
+    margin-left: 24px;
+    
+}
+
+.navbar{
+    justify-content: center;
+    display: inline-block;
+    
+}
+
+.entryOption{
+   list-style: none;
+   margin-top: 18px;
+}
+
+.wrap{
+    /* border: 1px solid green; */
+    
+    border-top: 1px solid #9be9fa;
+    border-right: 1px solid #9be9fa;
+    border-left: 1px solid #9be9fa;
+    border-bottom-style: hidden;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #9be9fa;
+}
+
+.entryOption li{
+    display: flex;
+   justify-content: center;
+    display:inline-block;
+    padding: 0px 60px;
+    padding-bottom: 5px;
+    height: 30px;
+    width: 60px;
+    align-items: center;
+    line-height: 30px;
+    /* border: 1px solid red; */
+    border-top: 1px solid #9be9fa;
+    border-right: 1px solid #9be9fa;
+    border-left: 1px solid #9be9fa;
+    border-bottom-style: hidden;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #9be9fa;
+    cursor: pointer;
+}
+
+.contents{
+    /* margin-left: 65px; */
+    border: 1px solid white;
+    width:800px;
+    height:400px;
+    margin-left: 65px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+    border-top-style: hidden;
+}
+
+.entryOption li:hover{
+    border-top: 1px solid #066283;
+    border-right: 1px solid #066283;
+    border-left: 1px solid #066283;
+    background-color: #066283;
+    border-bottom-style: hidden;
+
+}
