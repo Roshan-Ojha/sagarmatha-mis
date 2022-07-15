@@ -1,0 +1,60 @@
+.mainAssesment{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    height: 130px;
+    width: 75px;
+    
+    margin-left: 55px;
+    margin-top: 60px;
+    margin-right: 10px;
+
+}
+
+
+.chooseContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dbedf7;
+    background-color: #dbedf7;
+    border-radius: 10px;
+
+}
+
+.chooseContainer div{
+    padding: 10px 5px 10px 5px;
+    width: 61px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.chooseContainer div:hover{
+    background-color: #64bde1;
+    border: 1px solid #64bde1;
+}
+
+.fixedmark{
+    margin-bottom: 10px;
+}
+
+.manualTable{
+    width: 650px;
+}
+
+.manualTable, .manualTable th, .manualTable td{
+    /* padding: 2px 2px; */
+    border: 1px solid  #64bde1;
+
+}
+
+.manualTable td{
+    border-radius: 10px;
+}
+
+/* .marks{
+    width: 50px;
+} */

@@ -111,9 +111,12 @@ select{
 
 .contents{
     /* margin-left: 65px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
-    width:800px;
-    height:400px;
+    width:800px; 
+    height:440px;
     margin-left: 65px;
     border-radius: 8px;
     background-color: white;

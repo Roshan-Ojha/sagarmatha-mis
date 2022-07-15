@@ -1,13 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/notice1.png";
+import Assesment from "../Components/Teacher/Assesment";
+import Assignment from "../Components/Teacher/Assignment";
+import Attendance from "../Components/Teacher/Attendance";
 import "./teacher.css";
 
 function TeacherPortal(props) {
+  const [selectOption, setSelectOption] = useState("attendance");
+
   function logoutHandler() {
     props.onLogout();
   }
-
-  useEffect(() => {}, []);
 
   return (
     <div className="mainteacher">
@@ -20,8 +23,8 @@ function TeacherPortal(props) {
           Sagarmatha <br /> MIS
         </span>
         <div>
-        <button onClick={logoutHandler}>Logout</button>
-      </div>
+          <button onClick={logoutHandler}>Logout</button>
+        </div>
       </div>
       <div className="welcomeTeacher">
         <span>Welcome&nbsp;</span>
@@ -66,16 +69,33 @@ function TeacherPortal(props) {
           <nav>
             <ul className="entryOption">
               <div className="wrap">
-                <li className="attendence">Attendance</li>
-                <li>Assignment</li>
-                <li>Assesment</li>
+                <li
+                  className="attendence"
+                  onClick={(e) => setSelectOption("attendance")}
+                >
+                  Attendance
+                </li>
+                <li onClick={(e) => setSelectOption("assignment")}>
+                  Assignment
+                </li>
+                <li onClick={(e) => setSelectOption("assesment")}>Assesment</li>
               </div>
             </ul>
           </nav>
         </div>
       </div>
 
-      <div className="contents"></div>
+      <div className="contents">
+        {selectOption === "attendance" ? (
+          <Attendance></Attendance>
+        ) : selectOption === "assignment" ? (
+          <Assignment></Assignment>
+        ) : selectOption === "assesment" ? (
+          <Assesment></Assesment>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }

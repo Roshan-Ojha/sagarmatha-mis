@@ -15,7 +15,7 @@ function Login(props) {
       return;
     }
 
-    if (email?.includes("@sagarmatha.edu.np")) {
+    if (email?.includes("bipinthapa@sagarmatha.edu.np")) {
       const name = email.substring(0, email.length - 18);
       props.onLogin("teacher", name);
     }
