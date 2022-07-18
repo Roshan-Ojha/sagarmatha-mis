@@ -1,0 +1,35 @@
+.mainBlogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Blogs{
+    width: 650px;
+    height: 300px;
+    border: 1px solid red;
+    word-wrap: break-word;
+white-space: pre-wrap;
+word-break: break-word;
+}
+
+textarea{
+    width: 600px;
+    margin-top: 15px;
+}
+
+.inputPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bipin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Bipin img{
+    border-radius: 50%;
+}

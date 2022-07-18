@@ -1,0 +1,18 @@
+.attendanceFromDatabase{
+    border: 1px solid red;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.attendanceFromDatabase div{
+    display: flex;
+    border: 1px solid #9be9fa;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px gray;
+}

@@ -31,7 +31,7 @@
 .selectBatch{
     display:flex;
     flex-direction: row;
-    margin-left: 65px;
+    margin-left: 65px; 
     gap: 10px;
 }
 
@@ -131,4 +131,9 @@ select{
     background-color: #066283;
     border-bottom-style: hidden;
 
+}
+
+.jugaad{
+    display: flex;
+    flex-direction: row;
 }

@@ -12,12 +12,25 @@ function Login(props) {
 
     if (!email?.includes("@sagarmatha.edu.np")) {
       alert("Invalid Email");
+      
       return;
     }
-
+    // console.log(email.substring(0,7));
+    // console.log(email.substring(16,34));
     if (email?.includes("bipinthapa@sagarmatha.edu.np")) {
       const name = email.substring(0, email.length - 18);
       props.onLogin("teacher", name);
+    }
+
+
+    if (email.substring(0,7)==="076bct0"&&email.substring(16,34)==="@sagarmatha.edu.np"){
+      props.onLogin("student", email.substring(0,9));
+     
+    }
+    
+    if(email.substring(0,7)==="076bct0"&&email.substring(17,41)==="parent@sagarmatha.edu.np"){
+      props.onLogin("parent",email.substring(0,9));
+      console.log(email.substring(17,41))
     }
   }
 

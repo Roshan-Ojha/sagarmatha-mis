@@ -4,9 +4,12 @@ import Assesment from "../Components/Teacher/Assesment";
 import Assignment from "../Components/Teacher/Assignment";
 import Attendance from "../Components/Teacher/Attendance";
 import "./teacher.css";
+import Blog from "../Components/Blogs/Blog";
+import Chat from "../Components/Chat/Chat";
 
 function TeacherPortal(props) {
   const [selectOption, setSelectOption] = useState("attendance");
+  const [blogs, setblogs] = useState(false);
 
   function logoutHandler() {
     props.onLogout();
@@ -23,16 +26,23 @@ function TeacherPortal(props) {
           Sagarmatha <br /> MIS
         </span>
         <div>
-          <button onClick={logoutHandler}>Logout</button>
+          <button onClick={e=>setblogs(true)}>Blog</button>
         </div>
+        {/* <div>
+          <button onClick={logoutHandler}>Logout</button>
+        </div> */}
       </div>
       <div className="welcomeTeacher">
         <span>Welcome&nbsp;</span>
-        {props.name === "bipinthapa" ? "Bipin Thapa" : ""}
+        {props.name==="bipinthapa" ? "Bipin Thapa" : ""}
       </div>
       <hr></hr>
 
-      <div className="selectBatch">
+      <div className="jugaad">
+      <div>
+      {!blogs?<div>
+        <div className="jugaa"></div>
+        <div className="selectBatch">
         <div className="year">
           <select name="batch">
             <option>Batch</option>
@@ -63,6 +73,7 @@ function TeacherPortal(props) {
             : ""}
         </span>
       </div>
+      
       <hr></hr>
       <div className="Entry">
         <div className="navbar">
@@ -85,9 +96,14 @@ function TeacherPortal(props) {
         </div>
       </div>
 
+      </div>:""}
+     
+
       <div className="contents">
+        {blogs?<Blog></Blog>:<div>
+          
         {selectOption === "attendance" ? (
-          <Attendance></Attendance>
+          <Attendance name={props.name}></Attendance>
         ) : selectOption === "assignment" ? (
           <Assignment></Assignment>
         ) : selectOption === "assesment" ? (
@@ -95,7 +111,19 @@ function TeacherPortal(props) {
         ) : (
           ""
         )}
+          </div>}
       </div>
+
+      </div>
+
+      <div>
+        <Chat></Chat>
+      </div>
+
+      </div>
+      <div>
+          <button onClick={logoutHandler}>Logout</button>
+        </div>
     </div>
   );
 }

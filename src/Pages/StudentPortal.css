@@ -1,0 +1,37 @@
+.Studentsubjects{
+    display: flex;
+    width: 700px;
+    overflow-x: scroll;
+    flex-direction: row;
+    margin-left: 65px;
+    /* border: 1px solid red; */
+}
+
+.Studentsubject{
+    display: flex;
+    align-items: center;
+    border: 1px solid #9be9fa;
+    /* margin-left: 0px;
+    margin-top: 0px;
+    /* padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px; */ 
+    margin: 5px 5px 0px 5px;
+    width: 135px;
+    height: 65px;
+    border-radius: 5px;
+    box-shadow: 1px 1px gray;
+    cursor: pointer;
+}
+
+.Studentsubject_teacher{
+    border-radius: 5px;
+    box-shadow: 1px 1px gray;
+    margin: 0px 5px 5px 5px;
+    border: 1px solid #9be9fa;
+    
+}
+
+.Studentsubject:hover{
+    background-color: #066283;
+}
